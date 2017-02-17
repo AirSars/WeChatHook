@@ -1,0 +1,17 @@
+Package: com.mlgb.wx1.hookFile
+Name: hookFile
+Version: 0.1-1
+Description: 
+Section: System
+Depends: firmware (>= 5.0)
+Conflicts: 
+Replaces: 
+Priority: optional
+Architecture: iphoneos-arm
+Author: AirSars
+dev: 
+Homepage: 
+Depiction: 
+Maintainer: 
+Icon: 
+

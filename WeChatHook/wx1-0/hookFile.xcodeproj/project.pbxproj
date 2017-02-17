@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F880D5DE1DE837D700D37597 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F880D5DD1DE837D700D37597 /* Foundation.framework */; };
+		F880D5E01DE837D700D37597 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F880D5DF1DE837D700D37597 /* UIKit.framework */; };
+		F880D5EC1DE837D700D37597 /* hookFile.mm in Sources */ = {isa = PBXBuildFile; fileRef = F880D5EB1DE837D700D37597 /* hookFile.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F880D5DA1DE837D700D37597 /* libhookFile.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libhookFile.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		F880D5DD1DE837D700D37597 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F880D5DF1DE837D700D37597 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F880D5E41DE837D700D37597 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		F880D5E51DE837D700D37597 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		F880D5E71DE837D700D37597 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		F880D5E81DE837D700D37597 /* hookFile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hookFile-Prefix.pch"; sourceTree = "<group>"; };
+		F880D5EB1DE837D700D37597 /* hookFile.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = hookFile.mm; sourceTree = "<group>"; };
+		F880D5EF1DE837D700D37597 /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/lib/0xdeadfa11; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F880D5D61DE837D700D37597 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F880D5DE1DE837D700D37597 /* Foundation.framework in Frameworks */,
+				F880D5E01DE837D700D37597 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F880D5D01DE837D700D37597 = {
+			isa = PBXGroup;
+			children = (
+				F880D5E11DE837D700D37597 /* hookFile */,
+				F880D5DC1DE837D700D37597 /* Frameworks */,
+				F880D5DB1DE837D700D37597 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F880D5DB1DE837D700D37597 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F880D5DA1DE837D700D37597 /* libhookFile.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F880D5DC1DE837D700D37597 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F880D5DD1DE837D700D37597 /* Foundation.framework */,
+				F880D5DF1DE837D700D37597 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F880D5E11DE837D700D37597 /* hookFile */ = {
+			isa = PBXGroup;
+			children = (
+				F880D5EB1DE837D700D37597 /* hookFile.mm */,
+				F880D5E21DE837D700D37597 /* Package */,
+				F880D5E61DE837D700D37597 /* Supporting Files */,
+			);
+			path = hookFile;
+			sourceTree = "<group>";
+		};
+		F880D5E21DE837D700D37597 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				F880D5E31DE837D700D37597 /* DEBIAN */,
+				F880D5ED1DE837D700D37597 /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		F880D5E31DE837D700D37597 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				F880D5E41DE837D700D37597 /* control.txt */,
+				F880D5E51DE837D700D37597 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		F880D5E61DE837D700D37597 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F880D5E71DE837D700D37597 /* PackageVersion.plist */,
+				F880D5E81DE837D700D37597 /* hookFile-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F880D5ED1DE837D700D37597 /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				F880D5EE1DE837D700D37597 /* lib */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		F880D5EE1DE837D700D37597 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				F880D5EF1DE837D700D37597 /* 0xdeadfa11 */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F880D5D71DE837D700D37597 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F880D5D91DE837D700D37597 /* hookFile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F880D5F21DE837D700D37597 /* Build configuration list for PBXNativeTarget "hookFile" */;
+			buildPhases = (
+				F880D5D51DE837D700D37597 /* Sources */,
+				F880D5D61DE837D700D37597 /* Frameworks */,
+				F880D5D71DE837D700D37597 /* Headers */,
+				F880D5D81DE837D700D37597 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hookFile;
+			productName = hookFile;
+			productReference = F880D5DA1DE837D700D37597 /* libhookFile.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F880D5D11DE837D700D37597 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				TargetAttributes = {
+					F880D5D91DE837D700D37597 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 93Q55563W3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F880D5D41DE837D700D37597 /* Build configuration list for PBXProject "hookFile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F880D5D01DE837D700D37597;
+			productRefGroup = F880D5DB1DE837D700D37597 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F880D5D91DE837D700D37597 /* hookFile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F880D5D81DE837D700D37597 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F880D5D51DE837D700D37597 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F880D5EC1DE837D700D37597 /* hookFile.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F880D5F01DE837D700D37597 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		F880D5F11DE837D700D37597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		F880D5F31DE837D700D37597 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = 93Q55563W3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/hookFile",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hookFile/hookFile-Prefix.pch";
+				INSTALL_PATH = /usr/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		F880D5F41DE837D700D37597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = 93Q55563W3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/hookFile",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hookFile/hookFile-Prefix.pch";
+				INSTALL_PATH = /usr/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F880D5D41DE837D700D37597 /* Build configuration list for PBXProject "hookFile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F880D5F01DE837D700D37597 /* Debug */,
+				F880D5F11DE837D700D37597 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F880D5F21DE837D700D37597 /* Build configuration list for PBXNativeTarget "hookFile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F880D5F31DE837D700D37597 /* Debug */,
+				F880D5F41DE837D700D37597 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F880D5D11DE837D700D37597 /* Project object */;
+}
